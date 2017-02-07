@@ -20,6 +20,6 @@ EXPOSE 6006
 VOLUME /var/lib/rippled
 
 # Add custom config
-ADD rippled.conf /opt/rippled/rippled.conf
+ADD rippled.conf /opt/ripple/etc/rippled.conf
 
-CMD ["/opt/rippled/rippled", "--conf", "/opt/rippled/rippled.conf"]
+CMD ["/opt/ripple/bin/rippled", "--conf", "/opt/ripple/etc/rippled.conf"]
